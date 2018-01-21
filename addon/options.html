@@ -1,0 +1,322 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/js/background/namespace.js"></script>	
+		<script type="text/javascript" src="/js/utils.js"></script>
+		<script type="text/javascript" src="/js/prefs.js"></script>
+		<script type="text/javascript" src="/js/options/options.js"></script>
+		<script type="text/javascript" src="/js/options.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="/css/options.css" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    	<meta name="format-detection" content="telephone=no"> 
+		
+		<title>Flash video downloader settings</title>
+	</head>
+	<body>
+
+   
+</head>
+
+<body style="min-height: 8px;">	
+	
+            
+   <div class="white_area">
+        <div class="girl"></div>
+        <br clear="all">
+		
+		<div class="options">
+		   <h2 class="options_title" id="addon_name">Flash Video Downloader - Change Your Settings:</h2>
+		   <div class="options_content">
+		   
+			<div id="masterMain" class="fvd_settings_container"> 
+
+				<!-- top -->
+				<div id="masterHead" class="fvd_settings_top">
+					<!-- tabs -->
+					<div class="fvd_settings_tabs">
+						<div class="fvd_settings_tabs_wrapper"> 
+						
+							<div class="fvd_settings_tabs_holder fvd_settings_clearfix"> 
+							
+								<!-- tab -->
+								<div id="tab_general" class="fvd_settings_tab selected">
+									<div class="fvd_settings_tab_holder">
+										<div class="fvd_settings_tab_icon fvd_settings_icon_ic_main_general"></div>
+										<div class="fvd_settings_tab_name" msg="options.general.title">Settings</div>
+										<div class="fvd_settings_tab_bord"></div>
+									</div>
+								</div>
+								<!-- /tab --> 
+								
+								<!-- tab -->
+								<div id="tab_showfiles" class="fvd_settings_tab">
+									<div class="fvd_settings_tab_holder">
+										<div class="fvd_settings_tab_icon fvd_settings_icon_ic_main_showfiles"></div>
+										<div class="fvd_settings_tab_name" msg="options.showfiles.title">File Types</div>
+										<div class="fvd_settings_tab_bord"></div>
+									</div>
+								</div>
+								<!-- /tab --> 
+							
+								<!-- tab -->
+								<div id="tab_blacklist" class="fvd_settings_tab" style="display: none;">
+									<div class="fvd_settings_tab_holder">
+										<div class="fvd_settings_tab_icon fvd_settings_icon_ic_main_blacklist"></div>
+										<div class="fvd_settings_tab_name" msg="options.blacklist.title" style="width: 150px; margin-left: -25px;">Block Pages</div>
+										<div class="fvd_settings_tab_bord"></div>
+									</div>
+								</div>
+								<!-- /tab --> 
+							
+								<!-- tab -->
+								<div id="tab_about" class="fvd_settings_tab">
+									<div class="fvd_settings_tab_holder">
+										<div class="fvd_settings_tab_icon fvd_settings_icon_ic_main_about"></div>
+										<div class="fvd_settings_tab_name" msg="options.about.title">About</div>
+										<div class="fvd_settings_tab_bord"></div>
+									</div>
+								</div>
+								<!-- /tab --> 
+
+							</div>    <!-- /fvd_settings_tabs_holder --> 
+						</div>  <!-- /fvd_settings_tabs_wrapper  -->
+					</div>
+					<!-- /tabs --> 
+					
+				</div>		<!-- /masterHead  -->
+				<!-- /top --> 
+
+
+				<div id="showMain" class="fvd_settings_show_container"> 
+
+					<div class="fvd_settings visible" id="container_general" style="display: block;">
+						<div class="fvd_settings_container">
+						
+							<div class="fvd_settings_title" msg="options.group.interface.title">Interface settings:</div>
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="display_youtube_button" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.display.youtube_button.title">Display youtube download button</span>
+								</label>
+							</div>
+						
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="display_facebook_button" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.display.facebook_button.title">Display facebook download button</span>
+								</label>
+							</div>
+						
+							<!--div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="display_vk_button" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.display.vk_button.title">Display vk.com download button</span>
+								</label>
+							</div-->
+						
+							<!--div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="open_in_new_tab" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.pages_in_new_tab.title">Open new pages in new tab</span>
+								</label>
+							</div-->
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="download_original_filename" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.download_original_filename.title">Download original FileName</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="download_dialog_filename" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.download_dialog_filename.title">Always prompt for saving files</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="show_panel_thumbnail" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.show_panel_thumbnail.title">Show previews for videos</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_drug_product" id="fvdsd_button_enable_drug" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.enable_drug_product">Enable Product Search</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_space"></div>
+					
+							<div class="fvd_settings_item native-button">
+								<div class="donate_button" id="donateDownloadNative">
+									<span>Download FVD Downloader Module</span>
+								</div>	
+							</div>
+
+							<div class="fvd_settings_space"></div>
+
+						</div>
+					</div>
+
+					<div class="fvd_settings" id="container_showfiles" style="display: none;">
+						<div class="fvd_settings_container">
+						
+							<div class="fvd_settings_title" msg="options.showfiles.title">Video-types:</div>
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_mp4" type="checkbox">
+									<span class="fvd_settings_check_title">.mp4 (mpeg)</span>
+								</label>
+							</div>
+						
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_3gp" type="checkbox">
+									<span class="fvd_settings_check_title">.3gp (3gpp)</span>
+								</label>
+							</div>
+						
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_flv" type="checkbox">
+									<span class="fvd_settings_check_title">.flv (flv)</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_mov" type="checkbox">
+									<span class="fvd_settings_check_title">.mov (quicktime)</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_avi" type="checkbox">
+									<span class="fvd_settings_check_title">.avi (msvideo)</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_wmv" type="checkbox">
+									<span class="fvd_settings_check_title">.wmv (ms-wmv)</span>
+								</label>
+							</div>
+							
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_asf" type="checkbox">
+									<span class="fvd_settings_check_title">.asf (ms-asf)</span>
+								</label>
+							</div>
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_swf" type="checkbox">
+									<span class="fvd_settings_check_title">.swf (flash)</span>
+								</label>
+							</div>
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="enable_type_webm" type="checkbox">
+									<span class="fvd_settings_check_title">.webm (Web)</span>
+								</label>
+							</div>
+							<div class="fvd_settings_space"></div>
+							<div class="fvd_settings_description" msg="options.showfiles.descr">Specify the file types that will be displayed in addon before download</div>
+							<div class="fvd_settings_space"></div>
+
+						</div>
+					</div>
+
+					<div class="fvd_settings" id="container_blacklist" style="display: none;">
+						<div class="fvd_settings_container">
+						
+							<div class="fvd_settings_item">
+								<label class="fvd_settings_check">
+									<input class="fvd_settings_check_element" sname="blacklist_enable" type="checkbox">
+									<span class="fvd_settings_check_title" msg="options.enabled.blacklist.title">Enabled Black List</span>
+								</label>
+							</div>
+						
+							<div class="fvd_settings_title" msg="options.blacklist_sites.title">Black List:</div>
+							<div class="fvd_settings_item">
+								<select size="12" id="BlackListSite"></select>
+							</div>
+
+							<div class="fvd_settings_item">
+								<input id="options_blacklist_text" class="fvd_settings_text_blacklist" type="text">
+							</div>
+
+							<div class="fvd_settings_item" style="margin: 10px 0 0 10px">
+								<button id="options_blacklist_remove" class="fvd_settings_button_blacklist_remove" msg="options.download.blacklist_remove.title" disabled="true">Delete</button>
+								<button id="options_blacklist_add_domain" class="fvd_settings_button_blacklist_add_domain" msg="panel_title_blacklist_domain" disabled="true">Add Domain</button>
+								<button id="options_blacklist_add_page" class="fvd_settings_button_blacklist_add_page" msg="panel_title_blacklist_page" disabled="true">Add Page</button>
+							</div>
+
+
+						</div>
+					</div>
+
+					
+					<div class="fvd_settings" id="container_about" style="display: none;">
+						<div class="fvd_settings_container">
+						
+							<div class="fvd_settings_title" msg="options.about.title">About</div>
+							<div class="fvd_settings_item">
+								<span class="fvd_settings_fvd_title" id="fvdsd_about_title">Flash Video Downloader</span>
+							</div>
+							<div class="fvd_settings_item">
+								<div class="fvd_settings_fvd_description" msg="addon_description">Flash Video Downloader is a whole new dimension in download management software.</div>
+							</div>
+						
+							<div class="fvd_settings_item">
+								<span class="fvd_settings_about_title" msg="options.about.version.title">Version:</span>
+								<span class="fvd_settings_fvd_version" id="fvdsd_version_value">16.0.0</span>
+							</div>
+
+							<div class="fvd_settings_item">
+								<span class="fvd_settings_about_title" msg="options.about.home_site_visit.title">Visit:</span>
+								<span class="fvd_settings_fvd_visit">http://www.flashvideodownloader.org/</span>
+							</div>
+						
+							<div class="fvd_settings_space"></div>
+
+						</div>
+					</div>
+					
+				
+				</div>    <!-- showMain -->	
+				
+				<div id="actionMain" class="fvd_settings_actions"> 
+					<div class="fvd_settings_submit">
+						<button class="fvd_settings_button fvd_settings_button_big" type="submit" disabled="" id="submitButton">
+							<span class="title_button" msg="options.dialog.button_ok.title">Update</span>
+						</button>
+					</div>
+					<div class="fvd_settings_cancel">
+						<button class="fvd_settings_button fvd_settings_button_big" id="cancelButton">
+							<span class="title_button" msg="options.dialog.button_cancel.title">Cancel</span>
+						</button>
+					</div>
+				
+				</div>    <!-- actionMain -->	
+				
+			</div>		   
+		   
+		   </div>  <!-- /options -->
+		</div>
+		
+    </div>
+	
+	</body>
+</html>

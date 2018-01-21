@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<!--Welcome module-->
+	<script type="text/javascript" src="/js/background/namespace.js"></script>	
+	<script type="text/javascript" src="/js/background.js"></script>
+
+	<script type="text/javascript" src="/js/Prefs.js"></script>				
+	<script type="text/javascript" src="/js/Utils.js"></script>			
+	<script type="text/javascript" src="/js/locale.js"></script>
+	<script type="text/javascript" src="/js/background/Media.js"></script>			
+	<script type="text/javascript" src="/js/background/FileSystem.js"></script>			
+	
+
+	<script type="text/javascript" src="/js/contentScripts/Controller.js"></script>			
+	<script type="text/javascript" src="/js/_external/md5.js"></script>
+	<script type="text/javascript" src="/js/_external/jspack.js"></script>
+	
+	<script type="text/javascript" src="/js/background/MainButton.js"></script>				
+
+	<script type="text/javascript" src="/modules/native.js"></script>
+	<script type="text/javascript" src="/modules/websql.js"></script>
+
+</head>
+<body>
+	
+	<input type="text" id="clipboardholder"/>
+	
+	<!-- Prototype for tooltip -->
+	
+	<div id="tiptip_holder" class="tip_bottom">
+		<div id="tiptip_arrow" style="margin-left: 14px; margin-top: -12px;">
+			<div id="tiptip_arrow_inner"></div>
+		</div>
+		<div id="tiptip_content"></div>
+	</div>
+	
+</body>
+</html>

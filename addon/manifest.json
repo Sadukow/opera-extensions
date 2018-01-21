@@ -1,0 +1,45 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/fvd.single.icon.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extension_hint__"
+   },
+   "content_security_policy": "script-src 'self' https://ciuvo.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "Test Opera Extension.",
+   "developer": {
+      "name": "NimbusWeb"
+   },
+   "icons": {
+      "128": "images/fvd.single.main_128.png",
+      "16": "images/fvd.single.main_16.png",
+      "24": "images/fvd.single.main_24.png",
+      "32": "images/fvd.single.main_32.png",
+      "48": "images/fvd.single.main_48.png",
+      "64": "images/fvd.single.main_64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtAJ5otybkUQcdFw2d4bSFOum5JDfRLi8/BdqM+csf44Aj5wuy6tsNzoSRZtqXy7F3AMfLfJDHAvcO36Jq1sPXargIzz2i8ekcixsTCFOOsjghQme1fI4IifCWofFSfbcCMqJK8XI9nbZqOB1F12EUSEw0lNx6pMZOKwfoSd06wQtUt9+fxk7ipC5kmiVM4Q1vSqBkwsjVRtRCGcD/n+MbAdvARtkoUztlFCo68JSvKDf++gNqbmWDrg5TWP2MgvXy9FBvJTUOwVLjtSi3H3oTTKUSHVP8fm59KBmaVso3pvTTA9pzF7ZG4J9mGn/MwkLBckJWwx2l7eCkDW2VcB68QIDAQAB",
+   "manifest_version": 2,
+   "name": "Test Opera Extension",
+   "options_page": "options.html",
+   "permissions": [ "\u003Call_urls>", 
+					"tabs", 
+					"webRequest", 
+					"webNavigation",
+					"http://*/*", 
+					"https://*/*", 
+					"cookies", 
+					"webRequestBlocking", 
+					"unlimitedStorage", 
+					"storage", 
+					"management", 
+					"notifications",
+					"nativeMessaging",
+					"downloads" ],
+   "short_name": "Test Opera Extension",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "*" ]
+}
